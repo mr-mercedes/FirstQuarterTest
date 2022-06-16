@@ -1,4 +1,12 @@
-﻿string[] array = {"hello", "2", "world", ":-)"};
+﻿Console.WriteLine("Введите размер массива: ");
+int sizeArray = Convert.ToInt32(Console.ReadLine());
+string?[] array = new string [sizeArray];
+for (int i = 0; i < array.Length; i++)
+{
+    Console.WriteLine($"Введите {i + 1} элемент массива: ");
+    array[i] = Console.ReadLine();
+}
+Console.Write("Заданный массив: ");
 for (int i = 0; i < array.Length; i++)
 {
     Console.Write(array[i] + " ");
